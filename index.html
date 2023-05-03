@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Number Guessing Game</h1>
+    <p>Enter a number between 1 and 100:</p>
+    <input type="number" id="blank">
+
+    <button onclick="startGame()">Start Game</button>
+    <p id="result"></p>
+    <p id="txt"></p>
+
+    <script>
+      function startGame() {
+        document.getElementById("result").innerHTML="";
+        // input= prompt("enter the number between 1 to 100");
+        input=document.getElementById('blank').value;
+        let c=0;temp=0;
+        if(input>=1 && input<=100)
+        {
+            temp=0;
+            while(c<5){
+                let guess= Math.floor(Math.random()*101 + 1);
+                text= "<p> guessed number"+guess+"</p>"
+                document.getElementById("result").innerHTML+= text
+                if(input==guess){
+                    temp=1;
+                    break;
+
+                }
+                c++;
+            }
+            if(temp==1)
+            {
+                document.getElementById("txt").innerHTML="computer wins";
+            }
+            else{
+                document.getElementById("txt").innerHTML="you win";
+            }
+        }
+        else{
+            document.getElementById("txt").innerHTML="enter the correct input";
+        }
+         
+      }
+    </script>
+  </body>
+</html>

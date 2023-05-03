@@ -1,0 +1,54 @@
+h1{
+    color: aquamarine;
+    text-align: center;
+    font-size:60px;
+}
+p{
+    text-align: center;
+    color: rgb(211, 200, 211);
+    font-size: 25px;
+
+
+}
+button{
+    padding: 15px 30px;
+    background: #5c5c57;
+    color: #fff;
+    outline: none;
+    border: none ;
+    font-weight: 400;
+    text-transform:uppercase ;
+    border-radius: 50px ;
+    cursor:pointer;
+}
+body{
+    display: flex;
+    /* border: 1px solid rgb(45, 43, 43); */
+    height: calc(100vh - 100px);
+    padding: 20px;
+    flex-direction: column;
+    background-color: black;
+    background-repeat: no-repeat;
+    /* color: aliceblue; */
+    /* text-emphasis-color: blue; */
+    align-items: center;
+    /* justify-content: center; */
+    background-image: url(https://r4.wallpaperflare.com/wallpaper/875/252/867/low-poly-wireframe-digital-art-wallpaper-0960982df1aa8d6b96d7081f1021763d.jpg);
+    /* background-image: url(https://r4.wallpaperflare.com/wallpaper/974/565/254/windows-11-windows-10-minimalism-hd-wallpaper-c876bde870303c5820cce16ed8a244ca.jpg); */
+    background-size: contain;
+}
+button:hover {
+    background-color: #3e8e41;
+}
+input{
+    display: flex;
+    align-self: center;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    border-style:hidden ;
+    border-top: #f7d5d5;
+}
